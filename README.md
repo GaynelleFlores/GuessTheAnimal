@@ -1,0 +1,2 @@
+# GuessTheAnimal
+JetBrains Academy project
