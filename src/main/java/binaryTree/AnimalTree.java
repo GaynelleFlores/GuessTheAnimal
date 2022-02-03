@@ -121,11 +121,11 @@ public class AnimalTree {
 		char[] s = str.toCharArray();
 		int i = 0;
 		while (i < s.length) {
-			if (s[i] == '└') {
+			if (s[i] == 'L') {
 				s[i] = ' ';
 			}
-			if (s[i] == '├') {
-				s[i] = '│';
+			if (s[i] == '-') {
+				s[i] = '|';
 			}
 			i++;
 		}

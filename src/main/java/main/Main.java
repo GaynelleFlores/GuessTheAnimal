@@ -1,17 +1,16 @@
-package animals;
+package main;
 
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import utils.Communicator;
+import animals.Game;
 import java.util.ResourceBundle;
 
 class Main {
 
     public static void main(String[] args) {
-
         ResourceBundle bundle = ResourceBundle.getBundle("animals");
-
         String filename = "animals.";
         if (((String)bundle.getObject("article.an")).equals("")) {
             filename = "animals_eo.";
@@ -49,5 +48,4 @@ class Main {
         }
         return null;
     }
-
 }

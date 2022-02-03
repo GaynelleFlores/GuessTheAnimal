@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'guesstheanimal'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.2'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.11.2'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.11.2'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
